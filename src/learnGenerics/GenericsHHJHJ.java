@@ -10,6 +10,8 @@ public class GenericsHHJHJ {
 		printMe(iray);
 		printMe(cray);
 	}
+
+	// in absense of generic method, have to write two methods to print one for Integer[] and other for Character[]
 	
 //	public static void printMe(Integer[] i){
 //		for(Integer x: i) System.out.printf("%s ", x);
@@ -21,11 +23,12 @@ public class GenericsHHJHJ {
 //	}
 	
 	
-	//generic method to elemicate above two methods
+	//generic method to eliminate above two methods
 	
 	public static <T> void printMe(T[] x){
 		for(T b: x) System.out.printf("%s ", b);
 		System.out.println();
+		
 	}
 	
 	
